@@ -40,5 +40,12 @@ class Ball{
       ellipse(locationX, locationY, rad, rad); 
    }
    
+   void grow(){
+     rad+=0.05;
+   }
+   
+   void detectBallCollision(){
+     
+   }
 
 }

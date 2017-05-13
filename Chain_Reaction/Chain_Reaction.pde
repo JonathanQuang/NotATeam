@@ -9,6 +9,20 @@ void setup(){
     balls[i] = new Ball(); 
    }
 }
+ 
+ 
+//runs the code that makes the balls collide and blow up
+void runExplosionMode(){
+      if (mousePressed == true){
+       mouseToggle = !mouseToggle;
+       System.out.println("was " + !mouseToggle + " now " + mouseToggle);
+    }
+  if (mouseToggle){
+     for(Ball b1:balls){
+        b1.grow(); 
+     }
+  }
+}
 
 void draw(){
   background(0);
@@ -16,8 +30,5 @@ void draw(){
     b1.display();
     b1.move();
   }
-  if (mousePressed == true){
-     mouseToggle = !mouseToggle;
-     System.out.println("was " + !mouseToggle + " now " + mouseToggle);
-  }
+  runExplosionMode();
 }
