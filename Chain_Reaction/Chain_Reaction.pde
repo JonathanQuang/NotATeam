@@ -1,4 +1,6 @@
 Ball[] balls;
+boolean mouseToggle;
+
 
 void setup(){
    size(640, 360);
@@ -13,5 +15,9 @@ void draw(){
   for(Ball b1: balls){
     b1.display();
     b1.move();
+  }
+  if (mousePressed == true){
+     mouseToggle = !mouseToggle;
+     System.out.println(mouseToggle);
   }
 }

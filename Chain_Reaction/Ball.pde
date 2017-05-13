@@ -39,4 +39,6 @@ class Ball{
       fill(c);
       ellipse(locationX, locationY, rad, rad); 
    }
+   
+
 }
