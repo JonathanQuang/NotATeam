@@ -18,6 +18,6 @@ void draw(){
   }
   if (mousePressed == true){
      mouseToggle = !mouseToggle;
-     System.out.println(mouseToggle);
+     System.out.println("was " + !mouseToggle + " now " + mouseToggle);
   }
 }
